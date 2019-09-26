@@ -71,8 +71,8 @@ console.log(palabra9.test(telefono));
 
 //NOVENO EJERCICIO
 console.log("\n9.- deteccion de url.\n");
-let palabra10 = /[(http|https|ftp)]:[a-z]\.[a-z]\.[a-z]]/;
-let urlss = "cual podria un numero valido esto http://www.casas.com";
+let palabra10 = /http|htpps|tps(:)(\/)(\/)[a-z]/g;
+let urlss = "cual podria un numero valido esto http://www.javascript.js.com";
 console.log(urlss);
 console.log(palabra10.test(urlss));
 urlss = "\ncual podria un numero valido esto ";
