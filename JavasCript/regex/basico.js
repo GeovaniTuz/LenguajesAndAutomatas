@@ -1,3 +1,4 @@
+/*
 let re1 = new RegExp("abc");
 let re2 = /[0-9]/;
 
@@ -25,3 +26,10 @@ console.log(newMensaje);
 let mensaje2 = "el 20 de enero de 2019 se dio inicio a la 3 semana nacional de tecnologia";
 let newMensaje2 = mensaje2.replace(/[a-z]{5,}/g, "");
 console.log(newMensaje2);
+
+*/
+
+var historia = " JavaScript es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos, ​ basado en prototipos, imperativo, débilmente tipado y dinámico";
+var expresion = /[A-Z][^aeiou][a-z]+/g;
+result = historia.match(expresion);
+console.log(result);
